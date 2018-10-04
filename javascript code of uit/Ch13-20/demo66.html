@@ -1,0 +1,46 @@
+    <html>
+<head>
+
+<script>
+
+    //Chap 19
+    //for loops with array
+    // bool value
+
+    
+
+    // initilization ; condition ; statement
+    /*
+    // optional
+    for(  ;   ;   ){
+
+    }
+    */
+    var cities = ["Karachi","Lahore","Islamabad","Peshawar","Hyderabad"];
+
+    var myCity = "fsd";
+    var matchFound = false;
+
+    for(var i=0; i<5; i++){
+        if(myCity === cities[i]){
+            alert("City Found");
+            matchFound = true;
+        }
+    }
+
+    if(matchFound === false){
+        alert("Your city is not in the list");
+        
+    }
+    cities.push("fsd");
+    alert(cities);
+
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+<html>

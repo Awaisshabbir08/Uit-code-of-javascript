@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <script>
+        function calCircum(radius) {
+            var pi = 3.14;
+            var total = 2 * radius * pi;
+            document.write("Circumference of circle    =" + total + "<br>");
+
+
+        }
+
+        function calArea(radius) {
+            var pi = 3.14;
+            var sqr = radius * radius;
+            var total = pi * sqr;
+            document.write("Area of circle =" + total);
+
+
+
+        }
+        var a = parseInt(prompt("type radius"));
+        calCircum(a), calArea(a);
+
+
+
+    </script>
+</body>
+
+</html>

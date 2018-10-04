@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function cal(base, height) {
+            var a = base * base;
+            var b = height * height;
+            var c = a + b;
+            return c;
+
+        }
+        hyp = cal(2, 2);
+        document.write("Hypotennuse<sup>2</sup>  = " + hyp + "<br>");
+
+
+
+        function square(sqr) {
+            var a = sqr;
+            var b = Math.sqrt(a);
+            document.write("square  = " + b + "<br>");
+
+        }
+        square(hyp);
+
+
+
+    </script>
+</body>
+
+</html>

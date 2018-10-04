@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        document.write("<h1>K-Electric Bill</h1>")
+
+        var user = prompt("enter user name");
+        document.write("Customer Name :" + user);
+
+        var month = ["january", "February", "March", "April", "May", "June", "July", "August", "September", "Octerber", "November", "December"];
+
+        var date = new Date();
+        var curMonth = month[date.getMonth()];
+        document.write("<br> Current Month : " + curMonth);
+
+        var units = prompt("type units");
+
+        var perUnit = 16;
+
+        document.write("<br> Number of units " + units + "<br> Charges per unit " + perUnit);
+
+        var netAmount = units * perUnit;
+
+        document.write("<br> Net Amount Payable (with in Due Date) : " + netAmount);
+
+        var latePay = (netAmount / 100) * 10;
+        var latePaid = latePay.toFixed(2);
+        document.write("<br> Late payment surcharge :" + latePaid);
+
+        var grossAmount = netAmount + latePay;
+        document.write("<br> Gross Amount Payable (after Due Date) " + grossAmount);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

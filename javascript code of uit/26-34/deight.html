@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var date = new Date("december 31, 2020");
+        // document.write(date);
+
+
+        // var d = new Date();
+        // document.write(d);
+        // document.write(d.setDate(15));
+
+
+
+        function calcTot(merchTot) {
+            var orderTot;
+            if (merchTot >= 100) {
+                orderTot = merchTot;
+            }
+            else if (merchTot < 50.01) {
+                orderTot = merchTot + 5;
+            }
+            else {
+                orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+            }
+            return orderTot;
+        }
+        var totalToCharge = calcTot(79.99);
+        document.write(totalToCharge);
+    </script>
+</body>
+
+</html>
