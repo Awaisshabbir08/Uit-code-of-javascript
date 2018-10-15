@@ -40,13 +40,17 @@
     function addElement(){
         var mainDiv = document.getElementById("mydata");
         var textValue = document.getElementById("paraName").value;
+   console.log(textValuel);
+        
         var paraElement = document.getElementById(textValue);
-
+   console.log(paraElement);
         var p = document.createElement("p");
         var t = document.createTextNode("This is new Text in p");
         p.appendChild(t);
 
         mainDiv.insertBefore(p,paraElement);
+   console.log(paraElement);
+        
     }
 
     function removeElement(){
