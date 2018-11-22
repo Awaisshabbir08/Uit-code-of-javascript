@@ -10,15 +10,17 @@
 </body>
 <script>
     
-   function hello(){
-       alert("Hello World");
-       //return 5;
+   function hello(name){
+       alert(name);
+       console.log("asjdilj")
+       return 5;
    }
 
    
-   var a = hello();
-   var b = new hello();
+   var a = hello("awais");
    
+   var b = new hello("Saad");
+   console.log(typeof b);
 
    alert(a);
    alert(b);
